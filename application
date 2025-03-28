@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Global Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background Image */
+        body {
+            background-image: url('https://agrierp.com/blog/wp-content/uploads/2024/01/why-is-agriculture-important-1536x878.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            color: white;
+        }
+
+        /* Centered Login Form */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .login-form {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Input Fields */
+        .login-form input {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        .login-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Icon Styling */
+        .login-form i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        /* Error Message */
+        .error-message {
+            color: red;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .login-form {
+                width: 90%;
+                padding: 30px;
+            }
+
+            .login-form h2 {
+                font-size: 22px;
+            }
+
+            .login-form input {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="login-form">
+            <h2><i class="fas fa-seedling"></i> Agriculture Portal Login</h2>
+
+            <!-- Login Form -->
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+
+            <!-- Error message for invalid login -->
+            <p class="error-message" id="errorMessage"></p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for form validation and interactivity
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Get the username and password values
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Simple validation (replace this with real authentication logic)
+            if (username === 'farmer' && password === 'plant123') {
+                window.location.href = 'index.html'; // Redirect to a dashboard page
+            } else {
+                // Show an error message
+                document.getElementById('errorMessage').textContent = 'Invalid Username or Password. Please try again.';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
