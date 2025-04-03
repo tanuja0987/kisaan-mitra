@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Website - Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .feature-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 300px;
+            text-align: center;
+            padding: 15px;
+        }
+        
+        .feature-item img {
+            width: 100%;
+            border-radius: 14px;
+        }
+        
+        .feature-item h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+        .feature-item p {
+            font-size: 1em;
+            color: #555;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            position: fixed;
+            width: 100%;
+            height: 20px;
+            bottom: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Type Of Climate</h1>
+        <div id="google_translate_element"></div>
+        <script>
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </header>
+    <main>
+        <section class="features">
+            <div class="feature-item">
+                <img src="https://th.bing.com/th/id/OIP.dV0i2EQVsxORgykGJI1sogHaE8?rs=1&pid=ImgDetMain" alt="Feature 1">
+                <h2><a href="Temperate climate.html">Temperate climate</a> </h2>
+                <p>A temperate climate is characterized by moderate temperatures and distinct seasonal changes, making it one of the most diverse and comfortable climate zones on Earth. It typically lies between the tropics and the polar regions, providing a balance of warm and cold weather throughout the year.</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://th.bing.com/th/id/OIP.OrNySvtA_RpHXaMCQ1TFXQHaE6?rs=1&pid=ImgDetMain" alt="Feature 2">
+                <h2><a href="polar cilmate.html">Polar climate</a></h2>
+                <p>A polar climate is characterized by extremely cold temperatures, long winters, and short, cool summers. It is found in regions near the poles, specifically within the Arctic and Antarctic circles, and is one of the harshest climates on Earth.</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://th.bing.com/th/id/OIP.4UHD0fMe3wrHo5gbcFLr4QHaD7?rs=1&pid=ImgDetMain" alt="Feature 3">
+                <h2><a href="desert climate .html">Desert climate</h2></a>
+                <p>Hot desert climates (BWh) are typically found under the subtropical ridge in the lower middle latitudes or the subtropics, often between 20° and 33° north and south latitudes. In these locations, stable descending air and high pressure aloft clear clouds and create hot, arid conditions with intense sunshine. </p>
+            </div>
+            <div class="feature-item">
+                <img src="https://www.jsg.utexas.edu/news/files/20460024208_6353727fb6_o.jpg" alt="Feature 3">
+                <h2><a href="Monsoon climate.html">Monsoon climate</h2></a>
+                <p>A monsoon climate is characterized by a distinct seasonal pattern of heavy rainfall during the wet season and relatively dry conditions during the dry season. This climate is driven by the monsoon winds, which shift directions seasonally.</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://th.bing.com/th/id/OIP.K6QBQjIyv3DMijYAn5lzAgHaE8?w=279&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Feature 3">
+                <h2><a href="Dry climate.html">Dry climate</a></h2>
+                <p>A dry climate is characterized by low precipitation levels that are insufficient to support significant vegetation growth. It is one of the major climate types and is defined by its aridity, making it unsuitable for lush vegetation or large water bodies.</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://th.bing.com/th/id/OIP.OBWltvBjCyxioO57TqBKTwHaEv?w=1200&h=768&rs=1&pid=ImgDetMain" alt="Feature 3">
+                <h2><a href="Tropical climate.html">Tropical climate</a></h2>
+                <p>A tropical climate is characterized by consistently warm temperatures throughout the year and significant rainfall, making it one of the most stable and predictable climates. Found near the equator, it supports lush vegetation, diverse ecosystems.</p>
+            </div>
+            <div class="feature-item">
+                <img src="http://ts2.mm.bing.net/th?id=OIP.DyYaLgmRP7D839Kk71UA8AHaE8&pid=15.1" alt="Feature 3">
+                <h2>Aird climate</h2>
+                <p>An arid climate, also known as a desert climate, is characterized by extremely low levels of precipitation, making it one of the driest climate types on Earth. These regions typically have minimal vegetation and extreme temperature variations.</p>
+            </div>
+        
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Farmer Website. All rights.</p>
+    </footer>
+</body>
+</html>
